@@ -1,17 +1,30 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    <CreatePost />
+    <PostList />
+    <LifeCycle /><br>
+    <ClickCounter /><br>
+
+    <HoverCounter />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PostList from './components/PostList.vue'
+import CreatePost from './components/CreatePost.vue'
+import LifeCycle from './components/LifeCycle.vue'
+import ClickCounter from './components/ClickCounter.vue'
+import HoverCounter from './components/HoverCounter.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PostList,
+    CreatePost,
+    LifeCycle,
+    ClickCounter,
+    HoverCounter
+
   }
 }
 </script>
